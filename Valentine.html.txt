@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Happy Valentine 💖</title>
+
+<style>
+    body {
+        background: linear-gradient(#ff9a9e, #fad0c4);
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    img {
+        width: 250px;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    button {
+        background-color: #ff4d6d;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background-color: #ff1e4d;
+    }
+
+    #message {
+        margin-top: 25px;
+        font-size: 22px;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>💝 Happy Valentine’s Day 💝</h1>
+<p>ถึงคนพิเศษของเรา</p>
+
+<img src="Valentine.JPG" alt="รูปของเรา">
+
+<br>
+<button onclick="showLove()">กดเพื่อรับเซอร์ไพรส์ 💌</button>
+
+<div id="message">
+    <p>รักเธอมากนะ 💖</p>
+    <p>ขอบคุณที่อยู่ข้าง ๆ กันเสมอ</p>
+    <p>อยู่ด้วยกันไปนาน ๆ นะ 😊</p>
+</div>
+
+<!-- เพลง -->
+<audio id="song">
+    <source src="Valentine.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function showLove() {
+    document.getElementById("message").style.display = "block";
+    document.getElementById("song").play();
+}
+</script>
+
+</body>
+</html>
